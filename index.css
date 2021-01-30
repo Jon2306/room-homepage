@@ -179,6 +179,12 @@ nav .nav__item a {
   }
 }
 
+@media (min-width: 1920px) {
+  .slider {
+    min-height: 60vh;
+  }
+}
+
 .slider__img-container {
   position: relative;
   -ms-grid-column: 1;
@@ -406,6 +412,14 @@ nav .nav__item a {
   .about {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about {
+    min-height: 40vh;
+    -ms-grid-columns: 1fr 40.131rem 1fr;
+        grid-template-columns: 1fr 40.131rem 1fr;
   }
 }
 

@@ -97,6 +97,7 @@ body {
   transition: all 0.4s ease;
   transform: translateY(-130px);
 }
+
 .navbar-bg {
   background-color: $veryDarkGrey !important;
   transition: all 0.4s ease;
@@ -175,6 +176,7 @@ nav {
     }
   }
 }
+
 .logo {
   margin-right: 40px;
   margin-top: 5px;
@@ -200,6 +202,10 @@ nav {
   @include media(">phone", "<=tablet") {
     grid-template-columns: 2fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  @include media('>=1920px') {
+    min-height: 60vh;
   }
 }
 
@@ -297,6 +303,11 @@ nav {
   .heading-one {
     @include heading-one();
 
+    // @include media('2560px') {
+    //   font-size: 3.1rem;
+    //   max-width: 34rem;
+    // }
+
     @include media(">tablet", "<=900px") {
       font-size: 2.1rem;
     }
@@ -308,6 +319,12 @@ nav {
 
   p {
     @include heading-three($darkGrey);
+
+    // @include media('2560px') {
+    //   font-size: 1.2rem;
+    //   line-height: 1.5rem;
+    //   max-width: 34rem;
+    // }
 
     @include media(">tablet", "<=900px") {
       font-size: 0.7rem;
@@ -349,6 +366,16 @@ nav {
     grid-template-columns: 1fr;
   }
 
+  @include media('>=1920px') {
+    min-height: 40vh;
+    grid-template-columns: 1fr 40.131rem 1fr;
+  }
+
+  // @include media('2560px') {
+  //   min-height: 40vh;
+  //   grid-template-columns: 1fr 46.331rem 1fr;
+  // }
+
   .about__col-one {
     background: url(./images/image-about-dark.jpg);
     min-height: 266px;
@@ -373,6 +400,11 @@ nav {
 
     p {
       @include heading-three($darkGrey);
+
+      // @include media('2560px') {
+      //   font-size: 1.2rem;
+      //   line-height: 1.5rem;
+      // }
 
       @include media(">tablet", "<=900px") {
         font-size: 0.7rem;
